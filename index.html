@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>图便宜 | 淘到淘宝最便宜</title>
+
+<link type="text/css" href="2.css" rel="stylesheet" />
+
+<script type="text/javascript" src='jq.js'></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$(".button2").click(function(){
+var m = $('#url').val()
+$("#itemshow").load("show.php?url="+m);
+});
+});
+</script>
+</head>
+
+<body>
+
+<div style="text-align:left; width:1200px; margin:20px auto 10px auto;">输入商品地址：</div>
+
+<div style="text-align:center;">
+
+<input id="url" style="width:1010px; text-align:center; letter-spacing:2px;" name="url" value="" />
+    
+<input type="submit" class="button2" value=" 查 看 商 品 信 息 " />
+    
+</div>
+
+<div style="text-align:center; margin:10px auto 0px auto; width:1200px;" id='itemshow'></div>
+
+<div style="text-align:center; margin:10px auto 0px auto; width:1200px;" id='listshow'></div>
+
+</body>
+
+</html>

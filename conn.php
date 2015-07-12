@@ -1,0 +1,1 @@
+<?php $con = mysql_connect("localhost","root","");mysql_select_db("flag", $con);mysql_query("set character set 'utf8'");mysql_query("set names 'utf8'");?>
